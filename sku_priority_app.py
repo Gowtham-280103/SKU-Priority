@@ -7,7 +7,7 @@ from io import BytesIO
 st.title(" SKU Priority Highlighter (Excel)")
                 
 # Loading master priority list
-PRIORITY_FILE = "/Users/gowtham/Desktop/HUL/Final Priority List.xlsx"
+priority_df = pd.read_excel("Final Priority List.xlsx")
 priority_df = pd.read_excel(PRIORITY_FILE)
 priority_skus = set(priority_df.iloc[:, 0].astype(str).str.strip())
     
