@@ -3,20 +3,6 @@ import pandas as pd
 from openpyxl import load_workbook
 from openpyxl.styles import Font, PatternFill
 from io import BytesIO
-    
-st.title(" SKU Priority Highlighter (Excel)")
-    
-# Loading master priority list
-PRIORITY_FILE = "/Users/gowtham/Desktop/HUL/Final Priority List.xlsx"
-priority_df = pd.read_excel(PRIORITY_FILE)
-priority_skus = set(priority_df.iloc[:, 0].astype(str).str.strip())
-    
-# Uploading indent file
-uploaded_file = st.file_uploader("Upload Loading Indent Excel", type=["xlsximport streamlit as st
-import pandas as pd
-from openpyxl import load_workbook
-from openpyxl.styles import Font, PatternFill
-from io import BytesIO
             
 st.title(" SKU Priority Highlighter (Excel)")
                 
